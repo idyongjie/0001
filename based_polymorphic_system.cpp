@@ -12,37 +12,37 @@ using namespace std;
 
 int main()
 {
-	//ÊµÀı»¯¹ÜÀí¶ÔÏó
+	//å®ä¾‹åŒ–ç®¡ç†å¯¹è±¡
 	WorkerManager wm;
 	int choice = 0;
 	while (true)
 	{
 
 		wm.show_menu();
-		cout << "ÇëÊäÈëÄúµÄÑ¡Ôñ: " << endl;
+		cout << "è¯·è¾“å…¥æ‚¨çš„é€‰æ‹©: " << endl;
 		cin >> choice;
 		switch (choice)
 		{
-		case 0://ÍË³öÏµÍ³
+		case 0://é€€å‡ºç³»ç»Ÿ
 			wm.exit_system();
 			break;
-		case 1://Ôö¼ÓÖ°¹¤,ÔÚ³ÌĞòÖĞÎ¬»¤Õâ¸ö²»¶¨³¤¶ÈµÄÊı×é£¬¿ÉÒÔ½«Êı×é´´½¨ÔÚ¶ÑÇø£¬²¢ÀûÓÃworker** µÄÖ¸ÕëÎ¬»¤,Ò²¿ÉÒÔÓÃvector
+		case 1://å¢åŠ èŒå·¥,åœ¨ç¨‹åºä¸­ç»´æŠ¤è¿™ä¸ªä¸å®šé•¿åº¦çš„æ•°ç»„ï¼Œå¯ä»¥å°†æ•°ç»„åˆ›å»ºåœ¨å †åŒºï¼Œå¹¶åˆ©ç”¨worker** çš„æŒ‡é’ˆç»´æŠ¤,ä¹Ÿå¯ä»¥ç”¨vector
 			wm.Add_emp();
 			break;
-		case 2://ÏÔÊ¾Ö°¹¤
+		case 2://æ˜¾ç¤ºèŒå·¥
 			wm.show_emp();
 			break;
-		case 3://É¾³ıÖ°¹¤
+		case 3://åˆ é™¤èŒå·¥
 			wm.del_emp();
 			break;
-		case 4://ĞŞ¸ÄÖ°¹¤
+		case 4://ä¿®æ”¹èŒå·¥
 			wm.change_emp();
 			break;
-		case 5://²éÕÒÖ°¹¤
+		case 5://æŸ¥æ‰¾èŒå·¥
 			break;
-		case 6://°´ÕÕ±àºÅÅÅĞò
+		case 6://æŒ‰ç…§ç¼–å·æ’åº
 			break;
-		case 7://Çå¿ÕËùÓĞÎÄµµ
+		case 7://æ¸…ç©ºæ‰€æœ‰æ–‡æ¡£
 			break;
 		default:
 			system("cls");
